@@ -1,0 +1,96 @@
+html {
+  font-size: 18px;
+  font-weight: 100;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('../img/backwood.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-line {
+  background-color: white;
+  height: 100%;
+  width: 40%;
+}
+.pos-abs-text {
+  position: absolute;
+  text-transform: uppercase;
+
+  font-family: Commissioner;
+  font-size: 10vh;
+  font-weight: 500;
+  line-height: 11vh;
+  letter-spacing: 0.08em;
+  text-align: left;
+  color: black;
+  top: 20%;
+
+  margin-left: 3%;
+}
+.pos-abs-text > .welcome {
+  width: 25%;
+}
+.pos-abs-text > .titel {
+  font-family: Commissioner;
+  font-size: 20vh;
+  font-weight: 700;
+  line-height: 22vh;
+  letter-spacing: 0.08em;
+  text-align: left;
+
+  padding-left: 59%;
+}
+.pos-abs-text > .store {
+  padding-left: 128%;
+}
+
+.bark-back {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url('../img/darkbackwood.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bark-back__titel {
+  position: absolute;
+  text-transform: uppercase;
+
+  font-family: Commissioner;
+  font-size: 10vh;
+  font-weight: 500;
+  line-height: 12vh;
+  letter-spacing: 0.08em;
+  text-align: center;
+
+  color: #ffffff;
+
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bark-back__titel > div {
+  width: 40%;
+}
