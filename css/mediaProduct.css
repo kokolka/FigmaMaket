@@ -61,6 +61,14 @@
         width: 70%;
     }
 }
+
+@media (max-width: 900px) {
+    .burger__content {
+        gap: 120px;
+        padding-left: 40px;
+        margin-top: 50px;
+    }
+}
 @media (max-width: 820px) {
     .footer__sections {
         display: flex;
@@ -72,6 +80,7 @@
     }
     .nav__burger-btn {
         display: grid !important;
+        z-index: 2;
     }
 
     .nav__burger-btn.active span:nth-child(1){
@@ -102,6 +111,7 @@
         visibility: hidden;
         position: absolute;
         transition: .4s ease-out;
+        z-index: 2;
     }
     .nav__buttons.active {
         display: flex;
@@ -267,8 +277,32 @@
         max-width: 542px;
         width: 100%;
     }
+
 }
+
+@media (max-width: 620px) {
+    .burger__content {
+        justify-content: space-between;
+    }
+    .burger__menu::before {
+        content: '';
+        position: absolute;
+        top: -175px;
+        right: -70px;
+    }
+    .burger__content {
+        padding-left: 20px;
+        gap: 90px;
+    }
+    .burger__categories .burger__item {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 600px) {
+    .burger__categories .burger__item {
+        font-size: 36px;
+    }
     .footer__publish {
         height: 100%;
     }
@@ -284,6 +318,13 @@
     }
 }
 @media (max-width: 570px) {
+    .burger__categories .burger__item {
+        font-size: 30px;
+    }
+    .burger__menu::before {
+        content: none;
+        border: transparent;
+    }
     .footer__publish {
         height: 100%;
     }
@@ -305,6 +346,25 @@
     }
 }
 @media (max-width: 480px) {
+    .burger__content {
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 10px;
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .burger__number {
+        font-size: 10px !important;
+    }
+    .burger__contact-link {
+        font-size: 10px !important;
+    }
+    .burger__item  {
+        font-size: 12px;
+    }
+    .burger__categories .burger__item {
+        font-size: 22px;
+    }
     .footer {
         padding: 60px 10px;
     }

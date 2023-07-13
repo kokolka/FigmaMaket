@@ -1,8 +1,10 @@
-const navBurgerBtn = document.querySelector('.nav__burger-btn');
-const navButtons = document.querySelector('.nav__buttons');
+const burger = document.querySelector('.burger');
+const logoDote = document.querySelector('.logo-dote');
+const logo = document.querySelectorAll('.logo')
 
-navBurgerBtn.addEventListener('click', () => {
-    navButtons.classList.toggle('active');
-    navBurgerBtn.classList.toggle('active');
-    
-});
+for(let i = 0; i < logo.length; i++) {
+    logoDote.addEventListener('click', () => {
+        logo[i].classList.toggle('logo--active')
+        burger.classList.toggle('burger--active')
+    });    
+}

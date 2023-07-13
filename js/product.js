@@ -38,6 +38,7 @@ subButtonsDicrement.addEventListener('click', () => {
 subButtonsIncrement.addEventListener('click', () => {
     productPrice.textContent = parseInt(productPrice.textContent) + 360
     subButtonsNumber.value++;
-});
+}); 
+
 
 
